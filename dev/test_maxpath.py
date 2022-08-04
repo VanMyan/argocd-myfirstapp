@@ -9,6 +9,7 @@ def max_sum(array):
             curent_sum = 0
     return max
 
+
 def test_max_sub1():
     a = [8,-5,4,-3,2,-10,3,-1,6,-3,8]
     result = max_sum(a)
