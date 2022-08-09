@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp1
+  name: application111
 spec:
   selector:
     matchLabels:
-      app: myapp1
+      app: application111
   replicas: 2
   template:
     metadata:
       labels:
-        app: myapp1
+        app: application111
     spec:
       containers:
-      - name: myapp1
-        image: van/argocd-app:1.1
+      - name: application111
+        image: VanMyan/argocd-myfirstapp
         ports:
         - containerPort: 8080
