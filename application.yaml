@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: myapp-argo-application1
+  name: application111
   namespace: argocd111
 spec:
   project: default
 
   source:
     repoURL: https://github.com/VanMyan/argocd-myfirstapp.git
-    targetRevision: HEAD
+    targetRevision: FETCH_HEAD
     path: dev
   destination:
     server: https://kubernetes.default.svc
